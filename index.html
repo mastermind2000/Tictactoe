@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TicTacToe</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+	<div id="header">Welcome To TicTacToe!!</div>
+	</div>
+	<div id="gamecontainer">
+		<div id="main">
+			<table>
+				<tr>
+					<td class="cell" id="0"></td>
+					<td class="cell" id="1"></td>
+					<td class="cell" id="2"></td>
+				</tr>
+				<tr>
+					<td class="cell" id="3"></td>
+					<td class="cell" id="4"></td>
+					<td class="cell" id="5"></td>
+				</tr>
+				<tr>
+					<td class="cell" id="6"></td>
+					<td class="cell" id="7"></td>
+					<td class="cell" id="8"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="endgame">
+			<div class="text"></div>
+		</div>
+		<div class="selectsym">
+			<p id="para">Select Symbol(O goes first):</p>
+			<button id="buttonX" onclick="selectsym('X')">X</button>
+			<button id="buttonY" onclick="selectsym('O')">O</button>
+		</div>
+		<div class="selectlvl">
+			<p>Select Level</p>
+			<button id="easyButton"	onclick="selectlvl('0')">Easy</button>
+			<button id="hardButton" onclick="selectlvl('1')">Hard</button>
+		</div>
+		<button id="buttonRestart" onclick="location.reload()">Restart</button>
+	</div>
+	<script type="text/javascript" src="test2.js"></script>
+</body>
+</html>
